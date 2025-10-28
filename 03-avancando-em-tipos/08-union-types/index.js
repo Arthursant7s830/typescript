@@ -3,3 +3,4 @@ function showBalance(balance) {
 }
 showBalance(100);
 showBalance("500");
+var arr2 = [1, "teste"];
