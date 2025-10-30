@@ -1,2 +1,5 @@
 var p = document.getElementById("some-p");
-console.log(p === null || p === void 0 ? void 0 : p.innerText);
+console.log(p.innerText);
+// BIGINT
+var num = 1000n;
+console.log(typeof num);
