@@ -7,3 +7,5 @@ var coordObj = {
     z: 34
 };
 showCoords(coordObj);
+var somePerson = { name: "Arthur", age: 21 };
+console.log(somePerson);
