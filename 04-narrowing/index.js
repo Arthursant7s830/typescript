@@ -1,6 +1,4 @@
-"use strict";
 // 1 - TYPE GUARD
-Object.defineProperty(exports, "__esModule", { value: true });
 function sum(a, b) {
     if (typeof a === "string" && typeof b === "string") {
         console.log(parseFloat(a) + parseFloat(b));
@@ -15,4 +13,18 @@ function sum(a, b) {
 sum("1", "2");
 sum(12, 1.23);
 sum("5", 4);
-//# sourceMappingURL=index.js.map
+//2-CHECANDO VALOR SE VALOR EXISTE
+function operations(arr, operation) {
+    if (operation === "sum") {
+        var sum_1 = arr.reduce(function (i, total) { return i + total; });
+    }
+    else if (operation === "multiply") {
+        var multiply = arr.reduce(function (i, total) { return i * total; });
+    }
+    else {
+        console.log("Por favor, defina uma operação");
+    }
+}
+operations([1, 12, 3]);
+operations([1, 12, 3], "sum");
+operations([1, 12, 3], "multiply");
